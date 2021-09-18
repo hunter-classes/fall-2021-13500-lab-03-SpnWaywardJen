@@ -1,10 +1,10 @@
 * Spring 2021 - Lab 03
 
-* Last name:
+* Last name: Baranyai
 
-* First name:
+* First name: Jennifer
 
-* GitHub username:
+* GitHub username: SpnWaywardJen
 
 * Notes:
 
