@@ -24,17 +24,24 @@ void reverse_order(std::string date1, std::string date2) {
     double rArray[365];
     std::string rDate;
     std::string dateArray[365];
+    bool found = false;
     int x = 0;
     while(fin >> rDate >> eastSt >> eastEl >> westSt >> westEl) { 
         fin.ignore(INT_MAX, '\n');
-        if(rDate >= date1 && rDate <= date2) {
+       if(rDate == date1) {
+           found = true;
+       }   
+       if(found) {
             rArray[x] = westEl;
             dateArray[x] = rDate;
             x++;
+       }
+        if(rDate == date2) {
+            found = false;
         }
     }
     fin.close();
-    for(int i = x-1; i >= 0; i--){
+    for(int i = x - 1; i >= 0; i--){
         std::cout << dateArray[i] << "\t" << rArray[i] << " ft" << std::endl;
     }
 }
