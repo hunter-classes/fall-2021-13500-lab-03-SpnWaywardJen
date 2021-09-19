@@ -12,7 +12,6 @@ Assignment: Lab 3
 #include <climits>
 #include "reservoir.h"
 
-
 double get_east_storage(std::string date) {
     std::ifstream fin("Current_Reservoir_Levels.tsv");
     if (fin.fail()) {
