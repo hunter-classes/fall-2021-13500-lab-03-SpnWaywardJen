@@ -9,6 +9,7 @@ Assignment: Lab 3
 // add your code as appropriate 
 #include <iostream>
 #include "reservoir.h"
+#include "reverseorder.h"
 
 int main()
 {
@@ -22,6 +23,14 @@ int main()
   std::cout << "Enter Date: 09/13/2018\n" << "The basin with the higher elevation is: " << compare_basins("09/13/2018") << "\n\n";
   std::cout << "Enter Date: 03/25/2018\n" << "The basin with the higher elevation is: " << compare_basins("03/25/2018") << "\n\n";
   std::cout << "Enter Date: 12/20/2018\n" << "The basin with the higher elevation is: " << compare_basins("12/20/2018") << "\n\n";
+
+  std::cout << "Enter earlier date: 05/29/2018\n" << "Enter later date: 06/02/2018\n\n";
+  
+  reverse_order("05/29/2018", "06/02/2018");
+
+  std::cout << "\nEnter earlier date: 03/20/2018\n" << "Enter later date: 03/25/2018\n\n";
+  
+  reverse_order("03/20/2018", "03/25/2018");
 
   return 0;
 }
